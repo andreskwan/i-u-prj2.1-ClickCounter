@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>73B2B9F4-264A-4318-BA65-BC76B5CFAC58</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Click Counter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CBBCC7804A0C01A3CBF71328E3FFC9E13FC7187D</key>
+		<string>https://github.com/andreskwan/i-u-s-prj2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Click Counter.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CBBCC7804A0C01A3CBF71328E3FFC9E13FC7187D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/andreskwan/i-u-s-prj2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CBBCC7804A0C01A3CBF71328E3FFC9E13FC7187D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CBBCC7804A0C01A3CBF71328E3FFC9E13FC7187D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>prj2%20-%20MemeMe</string>
+		</dict>
+	</array>
+</dict>
+</plist>
