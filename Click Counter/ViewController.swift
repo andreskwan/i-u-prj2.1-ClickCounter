@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     var count = 0
     @IBOutlet var label:UILabel!
-    var labelIncrement:UILabel!
+    @IBOutlet var labelIncrement:UILabel!
     
 
     override func viewDidLoad() {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBAction func incrementCount(){
         self.count++
         self.label.text          = "\(self.count)"
-//        self.labelIncrement.text = "\(self.count)"
+        self.label.font = UIFont.boldSystemFontOfSize(20)
         if (count % 2 != 0){
             self.view.backgroundColor = UIColor.blueColor()
             self.label.textColor      = UIColor.whiteColor()
@@ -31,10 +31,12 @@ class ViewController: UIViewController {
             self.label.textColor      = UIColor.blackColor()
         }
     }
-    func decrementCount(){
+    @IBAction func decrementCount(){
         self.count--
         self.label.text          = "\(self.count)"
-        self.labelIncrement.text = "\(self.count)"
+        self.view.backgroundColor = UIColor.redColor()
+        self.label.font = UIFont.boldSystemFontOfSize(40)
+        self.label.textColor      = UIColor.whiteColor()
     }
 
 }

@@ -24,46 +24,73 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8b-g5-N0J">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="WgK-D7-WgZ"/>
+                                </constraints>
                                 <state key="normal" title="Click">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="177" y="285" width="46" height="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WgK-D7-WgZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WgK-D7-WgZ"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <action selector="incrementCount" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r7t-bq-b3z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-CL-s5e">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Decrement">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decrementCount" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7KI-UQ-x7p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dWV-td-thi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="88" id="2oa-kY-RYK"/>
-                            <constraint firstAttribute="centerX" secondItem="o8b-g5-N0J" secondAttribute="centerX" id="ZY0-Ys-quN"/>
-                            <constraint firstItem="o8b-g5-N0J" firstAttribute="top" secondItem="dWV-td-thi" secondAttribute="bottom" constant="156" id="gw4-rg-9gq"/>
-                            <constraint firstAttribute="centerX" secondItem="dWV-td-thi" secondAttribute="centerX" id="veq-q1-MNU"/>
+                            <constraint firstItem="dWV-td-thi" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="4Wq-6G-iER"/>
+                            <constraint firstItem="dWV-td-thi" firstAttribute="centerX" secondItem="o8b-g5-N0J" secondAttribute="centerX" id="Ilk-yt-bV9"/>
+                            <constraint firstItem="qnF-CL-s5e" firstAttribute="centerX" secondItem="o8b-g5-N0J" secondAttribute="centerX" id="OmX-91-yOd"/>
+                            <constraint firstItem="dWV-td-thi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="88" id="UTJ-2f-MkH"/>
+                            <constraint firstItem="o8b-g5-N0J" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="WKs-l0-vNP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qnF-CL-s5e" secondAttribute="bottom" constant="131" id="gUN-9U-RAZ"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="dWV-td-thi"/>
                                 <exclude reference="o8b-g5-N0J"/>
+                                <exclude reference="qnF-CL-s5e"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2oa-kY-RYK"/>
-                                <exclude reference="veq-q1-MNU"/>
-                                <exclude reference="ZY0-Ys-quN"/>
-                                <exclude reference="gw4-rg-9gq"/>
+                                <exclude reference="4Wq-6G-iER"/>
+                                <exclude reference="Ilk-yt-bV9"/>
+                                <exclude reference="UTJ-2f-MkH"/>
+                                <exclude reference="WKs-l0-vNP"/>
+                                <exclude reference="OmX-91-yOd"/>
+                                <exclude reference="gUN-9U-RAZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="dWV-td-thi"/>
                                 <include reference="o8b-g5-N0J"/>
+                                <include reference="qnF-CL-s5e"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2oa-kY-RYK"/>
-                                <include reference="veq-q1-MNU"/>
-                                <include reference="ZY0-Ys-quN"/>
-                                <include reference="gw4-rg-9gq"/>
+                                <include reference="4Wq-6G-iER"/>
+                                <include reference="Ilk-yt-bV9"/>
+                                <include reference="UTJ-2f-MkH"/>
+                                <include reference="WKs-l0-vNP"/>
+                                <include reference="OmX-91-yOd"/>
+                                <include reference="gUN-9U-RAZ"/>
                             </mask>
                         </variation>
                     </view>
