@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var count = 0
-    var label:UILabel!
+    @IBOutlet var label:UILabel!
     var labelIncrement:UILabel!
     
 
@@ -19,14 +19,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-    func incrementCount(){
+    @IBAction func incrementCount(){
         self.count++
         self.label.text          = "\(self.count)"
-        self.labelIncrement.text = "\(self.count)"
+//        self.labelIncrement.text = "\(self.count)"
         if (count % 2 != 0){
             self.view.backgroundColor = UIColor.blueColor()
+            self.label.textColor      = UIColor.whiteColor()
         }else{
             self.view.backgroundColor = UIColor.whiteColor()
+            self.label.textColor      = UIColor.blackColor()
         }
     }
     func decrementCount(){
